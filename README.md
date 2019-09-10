@@ -1,5 +1,7 @@
 # Nebraska Open Carry
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f3feab5d-9545-4d81-8d47-f4db84d60d0c/deploy-status)](https://app.netlify.com/sites/neopencarry/deploys)
+
 ## Developer Notes
 
 ### Initial Setup
