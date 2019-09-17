@@ -14,6 +14,7 @@ import "./base.css";
 import {primaryColor, secondaryColor} from "../constants/style";
 
 import Header from "./Header";
+import MainLayoutSidebar from "./MainLayoutSidebar";
 import Footer from "./Footer";
 
 const Layout = ({children, className}) => (
@@ -25,13 +26,20 @@ const Layout = ({children, className}) => (
             title
           }
         }
+        sanityContentArea(identifier: {eq: "main-layout-sidebar"}) {
+          _rawBody
+        }
       }
     `}
     render={(data) => (
       <div className={`main-content ${className}`}>
         <Header />
         <main>
-          {children}
+          <MainLayoutSidebar
+            className={`sidebar`}
+            content={data.sanityContentArea._rawBody}
+          />
+          <section className={`main-content`}>{children}</section>
           <div className={`footer-filler`} />
         </main>
         <Footer />
@@ -55,8 +63,29 @@ export default styled(Layout)`
 
   text-align: center;
 
-  #commento {
-    text-align: left;
+  .sidebar,
+  .main-content,
+  footer {
+    float: left;
+  }
+
+  .sidebar {
+    width: 20%;
+    padding-right: 5%;
+  }
+
+  .main-content {
+    width: 75%;
+  }
+
+  @media (max-width: 740px) {
+    .sidebar {
+      display: none;
+    }
+
+    .main-content {
+      width: 100%;
+    }
   }
 
   a {
@@ -94,8 +123,6 @@ export default styled(Layout)`
   footer {
     background: ${primaryColor};
     color: white;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 
     .social-media {
