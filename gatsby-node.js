@@ -17,6 +17,8 @@ exports.createPages = ({graphql, actions}) => {
                 node {
                   _rawBody
                   slug
+                  title
+                  description
                 }
               }
             }
