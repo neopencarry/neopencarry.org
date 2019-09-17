@@ -9,6 +9,16 @@ export default {
       type: "string",
     },
     {
+      name: "title",
+      title: "Page Title",
+      type: "string",
+    },
+    {
+      name: "description",
+      title: "SEO Page Description",
+      type: "text",
+    },
+    {
       name: "published",
       title: "Published?",
       type: "boolean",

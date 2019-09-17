@@ -10,9 +10,9 @@ module.exports = {
     title: `Nebraska Open Carry`,
     description: `Working to maintain the right to keep and bear arms.`,
     author: `Caleb Larsen`,
-    url: `https://neopencarry.org`,
-    siteUrl: `https://neopencarry.org`,
-    image: ``,
+    url: `https://neopencarry.netlify.com`,
+    siteUrl: `https://neopencarry.netlify.com`,
+    image: `https://neopencarry.netlify.com/images/logo.png`,
     twitterUsername: ``,
   },
   plugins: [
