@@ -22,6 +22,7 @@ export default styled(MainLayoutSidebar)`
   ul {
     padding: 0;
     line-height: 1.75;
+    list-style: none;
     li::marker {
       display: none;
     }
