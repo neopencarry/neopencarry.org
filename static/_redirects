@@ -1,0 +1,13 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect default Netlify subdomain to primary domain
+https://neopencarry.netlify.com/* https://neopencarry.org/:splat 301!
+
+# Standard 301 (permanent) redirects after reorganization.
+# TODO: change from 302 (temporary) to 301 (permanent). Using 302 initially for testing purposes.
+#           from OLD                                     to NEW
+/articles/can-a-christian-carry-a-firearm   /blog/can-a-christian-carry-a-firearm   302
+/quotes                                     /resources/quotes                       302
+/articles/legislation/lb1030                /resources/legislation/lb1030           302
+/articles/firearm-retention                 /resources/firearm-retention            302
+/laws                                       /resources/laws                         302
