@@ -42,27 +42,21 @@ class Navigation extends PureComponent {
               <Link to={`/about-us`}>About</Link>
             </li>
             <li className={`nav-item`}>
-              <Link to={`/events`}>Events</Link>
+              <Link to={`/resources`}>Resources</Link>
             </li>
             <li className={`nav-item`}>
               <Link to={`/blog`}>Blog</Link>
             </li>
-            <li className={`nav-item`}>
-              <Link to={`/faq`}>FAQs</Link>
-            </li>
           </div>
           <div className={`right`}>
             <li className={`nav-item`}>
-              <Link to={`/quotes`}>Quotes</Link>
+              <Link to={`/faq`}>FAQs</Link>
             </li>
             <li className={`nav-item`}>
-              <Link to={`/articles`}>Articles</Link>
-            </li>
-            <li className={`nav-item`}>
-              <Link to={`/contact-us`}>Contact</Link>
+              <Link to={`/events`}>Events</Link>
             </li>
             <li className={`nav-item last`}>
-              <Link to={`/laws`}>Laws</Link>
+              <Link to={`/contact-us`}>Contact</Link>
             </li>
           </div>
         </ul>
@@ -150,6 +144,8 @@ export default styled(Navigation)`
         text-decoration: none;
       }
 
+      // For mobile navigation, all items should have a bottom border except the
+      // last (bottom) item.
       &:not(.last) {
         border-bottom: solid 1px;
       }
