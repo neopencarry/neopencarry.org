@@ -144,6 +144,8 @@ export default styled(Navigation)`
         text-decoration: none;
       }
 
+      // For mobile navigation, all items should have a bottom border except the
+      // last (bottom) item.
       &:not(.last) {
         border-bottom: solid 1px;
       }
