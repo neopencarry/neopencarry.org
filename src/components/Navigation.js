@@ -41,7 +41,7 @@ class Navigation extends PureComponent {
             <li className={`nav-item`}>
               <Link to={`/about-us`}>About</Link>
             </li>
-            <li className={`nav-item last`}>
+            <li className={`nav-item`}>
               <Link to={`/resources`}>Resources</Link>
             </li>
             <li className={`nav-item`}>
@@ -55,7 +55,7 @@ class Navigation extends PureComponent {
             <li className={`nav-item`}>
               <Link to={`/events`}>Events</Link>
             </li>
-            <li className={`nav-item`}>
+            <li className={`nav-item last`}>
               <Link to={`/contact-us`}>Contact</Link>
             </li>
           </div>
